@@ -22,13 +22,13 @@
                             <ul class="dropdown">
                                 <li><a href="#">Trampoline Park</a></li>
                                 <li><a href="#">Wall climbing</a></li>
-                                <li><a href="#">Ninja Course</a></li>
+                                <li><a href="ninja-course/">Ninja Course</a></li>
                                 <li><a href="#">Indoor Playground</a></li>
                                 <li><a href="#">Arcade Games </a></li>
                             </ul>
                         </li>
                         <li><a href="javacript:;">Tickets</a></li>
-                        <li><a href="javacript:;">Parties</a></li>
+                        <li><a href="parties/">Parties</a></li>
                         <li><a href="waiver">Waiver</a></li>
                         <li><a href="javacript:;">Promotions</a></li>
                         <li><a href="javacript:;">Terms</a></li>
