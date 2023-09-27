@@ -27,7 +27,7 @@
                                 <li><a href="#">Arcade Games </a></li>
                             </ul>
                         </li>
-                        <li><a href="javacript:;">Tickets</a></li>
+                        <li><a href="tickets/">Tickets</a></li>
                         <li><a href="parties/">Parties</a></li>
                         <li><a href="waiver">Waiver</a></li>
                         <li><a href="javacript:;">Promotions</a></li>
