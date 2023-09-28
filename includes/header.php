@@ -18,19 +18,19 @@
                     <ul>
                         <li><a href="./">Home</a></li>
                         <li class="dropdown-nav">
-                            <a href="javacript:;">Attractions</a>
+                            <a href="attractions">Attractions</a>
                             <ul class="dropdown">
                                 <li><a href="#">Trampoline Park</a></li>
-                                <li><a href="#">Wall climbing</a></li>
+                                <li><a href="wall-climbing">Wall climbing</a></li>
                                 <li><a href="ninja-course/">Ninja Course</a></li>
-                                <li><a href="#">Indoor Playground</a></li>
+                                <li><a href="softplay/">Indoor Playground</a></li>
                                 <li><a href="#">Arcade Games </a></li>
                             </ul>
                         </li>
                         <li><a href="tickets/">Tickets</a></li>
                         <li><a href="parties/">Parties</a></li>
-                        <li><a href="waiver">Waiver</a></li>
-                        <li><a href="javacript:;">Promotions</a></li>
+                        <li><a href="waiver/">Waiver</a></li>
+                        <li><a href="promotions">Promotions</a></li>
                         <li><a href="javacript:;">Terms</a></li>
                         <li><a href="javacript:;" class="c-btn style-1">Contact Us</a></li>
                     </ul>

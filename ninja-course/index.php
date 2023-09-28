@@ -19,7 +19,7 @@
         </div>
     </section>
 
-    <section class="ninja-text-section over-hidden">
+    <section class="ninja-text-section ">
         <img class="element-2" src="assets/images/elements/element-2.png" alt="">
         <img class="element-5" src="assets/images/elements/element-5.png" alt="">
         <div class="container">

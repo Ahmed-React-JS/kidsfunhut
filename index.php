@@ -24,14 +24,14 @@
     <section class="homeBanner spacing__x f-header">
 
         <!-- PROP -->
-        <img src="assets/images/home/home-prop-1.png" alt="" class="prop prop-top-left">
+        <img src="assets/images/home/home-prop-1.png" alt="" class="prop prop-top-left homeProp-1">
         <img src="assets/images/home/home-prop-2.png" alt="" class="prop prop-top-right prop-screen-end">
         <img src="assets/images/home/home-prop-3.png" alt="" class="prop prop-bottom-right prop-screen-end">
         <img src="assets/images/home/prop-4.png" alt="" class="prop prop-middle-center prop-screen-end">
 
-        <div class="container container-1300">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-sm-12">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-5 col-sm-12">
                     <div class="bannerText">
                         <h1>Lorem Ipsum is simply dummy text of
                             the printing</h1>
@@ -39,7 +39,7 @@
                         <a href="javascript:;" class="c-btn style-3">Get In Touch</a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-12">
+                <div class="col-lg-4 col-sm-12">
                     <div class="img__wrap">
                         <img src="assets/images/home/home-banner.png" alt="">
                     </div>
@@ -62,50 +62,52 @@
     <!-- HOME ABOUT SECTION START -->
     <section class="homeAboutSection bg-color-primary spacing__x waveProp bottom  ">
 
-        <div class="spacing__x-150">
-            <!-- PROPS -->
-            <img src="assets/images/home/about-prop.png" alt="" class="prop prop-top-left">
-            <img src="assets/images/home/about-prop-2.png" alt="" class="prop prop-top-right">
-            <img src="assets/images/home/about-prop-3.png" alt="" class="prop prop-bottom-left">
-            <img src="assets/images/home/about-prop-4.png" alt="" class="prop prop-bottom-right">
-            <div class="container">
-                <div class="row align-items-center justify-content-between">
-                    <div class="col-lg-5 col-sm-12">
-                        <div class="img__wrap">
-                            <img src="assets/images/home/home-about.png" alt="">
+        <div class="prop__container" style="max-width: 1390px; width: 100%; margin-inline: auto;">
+            <img src="assets/images/home/about-prop.png" alt="" class="prop prop-top-left prop-screen-end">
+            <img src="assets/images/home/about-prop-3.png" alt="" class="prop prop-bottom-left prop-screen-end">
+            <img src="assets/images/home/about-prop-2.png" alt="" class="prop prop-top-right prop-screen-end">
+            <img src="assets/images/home/about-prop-4.png" alt="" class="prop prop-bottom-right prop-screen-end">
+            <div class="spacing__x-150">
+                <!-- PROPS -->
+                <div class="container">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-lg-5 col-sm-12">
+                            <div class="img__wrap">
+                                <img src="assets/images/home/home-about.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-sm-12">
-                        <div class="homeAboutText">
-                            <h6 class="section__label fw-700">WHAT WE DO</h6>
-                            <h4 class="section__heading">Lorem Ipsum is simply dummy text of the printing</h4>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply
-                                dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard dummy text ever since the 1500s,,</p>
-                            <div class="aboutStats">
-                                <div class="d-flex justify-content-between">
-                                    <h6>Lorem Ipsum is</h6>
-                                    <div class="percentage">
-                                        80%
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="homeAboutText">
+                                <h6 class="section__label fw-700">WHAT WE DO</h6>
+                                <h4 class="section__heading">Lorem Ipsum is simply dummy text of the printing</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                    has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply
+                                    dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    standard dummy text ever since the 1500s,,</p>
+                                <div class="aboutStats">
+                                    <div class="d-flex justify-content-between">
+                                        <h6>Lorem Ipsum is</h6>
+                                        <div class="percentage">
+                                            80%
+                                        </div>
+                                    </div>
+                                    <div class="statLine">
+                                        <div style="width: 80%;"></div>
                                     </div>
                                 </div>
-                                <div class="statLine">
-                                    <div style="width: 80%;"></div>
-                                </div>
-                            </div>
-                            <div class="aboutStats">
-                                <div class="d-flex justify-content-between">
-                                    <h6>Lorem Ipsum is</h6>
-                                    <div class="percentage">
-                                        80%
+                                <div class="aboutStats">
+                                    <div class="d-flex justify-content-between">
+                                        <h6>Lorem Ipsum is</h6>
+                                        <div class="percentage">
+                                            80%
+                                        </div>
+                                    </div>
+                                    <div class="statLine">
+                                        <div style="width: 80%;"></div>
                                     </div>
                                 </div>
-                                <div class="statLine">
-                                    <div style="width: 80%;"></div>
-                                </div>
+                                <a href="#" class="c-btn style-3">About Us</a>
                             </div>
-                            <a href="#" class="c-btn style-3">About Us</a>
                         </div>
                     </div>
                 </div>
@@ -121,7 +123,7 @@
         <img src="assets/images/home/project-prop.png" alt="" class="prop prop-top-right">
 
 
-        <div class="container container-1300" style="max-width: 1300px;">
+        <div class="container" style="max-width: 1300px;">
             <div class="section__text text-center">
                 <h6 class="section__label color-secondary-2 fw-700">Projects</h6>
                 <h4 class="section__heading color-1">Our Project</h4>
@@ -131,8 +133,7 @@
                     <div class="item">
                         <div class="projectCard" style="background-image: url(assets/images/home/projectCard-1.png);">
                             <div class="projectCardHover">
-                                <div class="img__wrap"><a href=""><img src="assets/images/home/star-search.png"
-                                            alt=""></a></div>
+                                <div class="img__wrap"><a href=""><img src="assets/images/home/star-search.png" alt=""></a></div>
                                 <div class="text__wrap">
                                     <h5>Lorem Ipsum is</h5>
                                     <h6>Lorem Ipsum</h6>
@@ -143,8 +144,7 @@
                     <div class="item">
                         <div class="projectCard" style="background-image: url(assets/images/home/projectCard-2.png);">
                             <div class="projectCardHover">
-                                <div class="img__wrap"><a href=""><img src="assets/images/home/star-search.png"
-                                            alt=""></a></div>
+                                <div class="img__wrap"><a href=""><img src="assets/images/home/star-search.png" alt=""></a></div>
                                 <div class="text__wrap">
                                     <h5>Lorem Ipsum is</h5>
                                     <h6>Lorem Ipsum</h6>
@@ -155,8 +155,7 @@
                     <div class="item">
                         <div class="projectCard" style="background-image: url(assets/images/home/projectCard-3.png);">
                             <div class="projectCardHover">
-                                <div class="img__wrap"><a href=""><img src="assets/images/home/star-search.png"
-                                            alt=""></a></div>
+                                <div class="img__wrap"><a href=""><img src="assets/images/home/star-search.png" alt=""></a></div>
                                 <div class="text__wrap">
                                     <h5>Lorem Ipsum is</h5>
                                     <h6>Lorem Ipsum</h6>
@@ -167,8 +166,7 @@
                     <div class="item">
                         <div class="projectCard" style="background-image: url(assets/images/home/projectCard-3.png);">
                             <div class="projectCardHover">
-                                <div class="img__wrap"><a href=""><img src="assets/images/home/star-search.png"
-                                            alt=""></a></div>
+                                <div class="img__wrap"><a href=""><img src="assets/images/home/star-search.png" alt=""></a></div>
                                 <div class="text__wrap">
                                     <h5>Lorem Ipsum is</h5>
                                     <h6>Lorem Ipsum</h6>
@@ -193,7 +191,7 @@
         <img src="assets/images/home/experience-prop-1.png" alt="" class="prop prop-top-left">
         <img src="assets/images/home/experience-prop-2.png" alt="" class="prop prop-top-right">
 
-        <div class="container container-1300">
+        <div class="container">
             <div class="row align-items-center mb-5">
                 <div class="col-lg-6 col-sm-12">
                     <div class="experienceText">
@@ -252,84 +250,7 @@
 
 
     <!-- ACTIVITY SECTION START -->
-    <section class="activitySection spacing__x">
-        <!-- PROPS -->
-        <img src="assets/images/home/acti-prop-1.png" alt="" class="prop prop-top-left">
-        <img src="assets/images/home/acti-prop-2.png" alt="" class="prop prop-bottom-right">
-
-
-        <div class="activityMainContainer waveProp spacing__x-150">
-            <div class="container container-1300">
-                <div class="section__text text-center">
-                    <h6 class="section__label color-secondary-2 fw-700">Lorem Ipsum</h6>
-                    <h4 class="section__heading color-1">WE’RE ALWAYS UP <br> TO SOMETHING NEW</h4>
-                </div>
-
-                <div class="activeMain">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="activityCards">
-                                <div class="img__wrap">
-                                    <img src="assets/images/home/activity-1.png" alt="">
-                                </div>
-                                <h6>Lorem Ipsum</h6>
-                                <p>Lorem Ipsum is simply dummy</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="activityCards">
-                                <div class="img__wrap">
-                                    <img src="assets/images/home/expi-2.png" alt="">
-                                </div>
-                                <h6>Lorem Ipsum</h6>
-                                <p>Lorem Ipsum is simply dummy</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="activityCards">
-                                <div class="img__wrap">
-                                    <img src="assets/images/home/expi-3.png" alt="">
-                                </div>
-                                <h6>Lorem Ipsum</h6>
-                                <p>Lorem Ipsum is simply dummy</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="activityCards">
-                                <div class="img__wrap">
-                                    <img src="assets/images/home/expi-4.png" alt="">
-                                </div>
-                                <h6>Lorem Ipsum</h6>
-                                <p>Lorem Ipsum is simply dummy</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="activityCards">
-                                <div class="img__wrap">
-                                    <img src="assets/images/home/expi-5.png" alt="">
-                                </div>
-                                <h6>Lorem Ipsum</h6>
-                                <p>Lorem Ipsum is simply dummy</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-12">
-                            <div class="activityCards">
-                                <div class="img__wrap">
-                                    <img src="assets/images/home/expi-6.png" alt="">
-                                </div>
-                                <h6>Lorem Ipsum</h6>
-                                <p>Lorem Ipsum is simply dummy</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="button__wrap text-center">
-                        <a href="#" class="c-btn style-3">Load More</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
+    <?php include('includes/activity-section.php')?>
     <!-- ACTIVITY SECTION END -->
 
     <!-- Gallery Start -->
