@@ -91,12 +91,12 @@ a:hover {
   justify-content: center;
 }
 
-.slick-dots>li {
+.slick-dots > li {
   display: inline-block;
   margin: 0 8px;
 }
 
-.slick-dots>li button {
+.slick-dots > li button {
   padding: 0;
   font-size: 0;
   width: 13px;
@@ -107,7 +107,7 @@ a:hover {
   border: 1px solid #ffffff;
 }
 
-.slick-dots>li button::before {
+.slick-dots > li button::before {
   content: "";
   position: absolute;
   left: 0;
@@ -124,11 +124,11 @@ a:hover {
   border-radius: 50px;
 }
 
-.slick-dots>li.slick-active button::before {
+.slick-dots > li.slick-active button::before {
   background-color: var(--primary-color);
 }
 
-.slick-dots>li.slick-active button {
+.slick-dots > li.slick-active button {
   border-color: var(--primary-color);
 }
 
@@ -203,7 +203,7 @@ button {
   background-color: #e0e0e0;
 }
 
-.customradio input:checked~.checkmark {
+.customradio input:checked ~ .checkmark {
   background: #ff6101;
 }
 
@@ -502,11 +502,11 @@ ul li {
   position: relative;
 }
 
-
+.bottomRotate::after,
 .waveRotate.bottom::after {
   transform: scaleX(-1);
 }
-
+.topRotate::before,
 .waveRotate.top::before {
   transform: scaleX(-1);
 }
@@ -537,7 +537,8 @@ ul li {
   position: absolute;
   top: -2px;
   left: 0;
-  background: url(../images/tickets/header-before.png) no-repeat top center/cover;
+  background: url(../images/tickets/header-before.png) no-repeat top
+    center/cover;
   width: 100%;
   height: 88px;
 }
@@ -843,14 +844,14 @@ ul li {
   margin: 0 -20px;
 }
 
-.breadcrumbs>li {
+.breadcrumbs > li {
   display: inline-block;
   vertical-align: middle;
   position: relative;
   padding: 0 20px;
 }
 
-.breadcrumbs>li:before {
+.breadcrumbs > li:before {
   content: "";
   position: absolute;
   right: 0px;
@@ -862,7 +863,7 @@ ul li {
   background-color: var(--white);
 }
 
-.breadcrumbs>li a {
+.breadcrumbs > li a {
   color: var(--white);
   text-align: center;
   font-size: 18px;
@@ -870,7 +871,7 @@ ul li {
   text-transform: capitalize;
 }
 
-.breadcrumbs>li:last-child:before {
+.breadcrumbs > li:last-child:before {
   display: none;
 }
 
@@ -916,51 +917,51 @@ header.sticky-header {
   min-height: 532px;
 }
 
-.site-navigation>ul {
+.site-navigation > ul {
   text-align: right;
 }
 
-.site-navigation>ul>li {
+.site-navigation > ul > li {
   display: inline-block;
   margin-right: 25px;
   vertical-align: top;
 }
 
-.site-navigation>ul>li:last-child {
+.site-navigation > ul > li:last-child {
   margin-right: 0;
 }
 
-.site-navigation>ul>li>a {
+.site-navigation > ul > li > a {
   color: var(--primary-color);
   font-weight: 500;
   padding: 8px;
   border-radius: 4px;
 }
 
-.site-navigation>ul>li>a.c-btn {
+.site-navigation > ul > li > a.c-btn {
   padding: 13px 25px;
 }
 
-.site-navigation>ul>li.is-active>a,
-.site-navigation>ul>li:hover>a {
+.site-navigation > ul > li.is-active > a,
+.site-navigation > ul > li:hover > a {
   background-color: var(--secondary-color-2);
   color: var(--white);
 }
 
-header.header-white .site-navigation>ul>li>a {
+header.header-white .site-navigation > ul > li > a {
   color: var(--white);
 }
 
-header.header-white .site-navigation>ul>li>a.c-btn {
+header.header-white .site-navigation > ul > li > a.c-btn {
   background-color: var(--secondary-color);
 }
 
-header.header-white.sticky-header .site-navigation>ul>li>a {
+header.header-white.sticky-header .site-navigation > ul > li > a {
   color: var(--primary-color);
 }
 
-header.header-white.sticky-header .site-navigation>ul>li:hover>a,
-header.header-white.sticky-header .site-navigation>ul>li.is-active>a {
+header.header-white.sticky-header .site-navigation > ul > li:hover > a,
+header.header-white.sticky-header .site-navigation > ul > li.is-active > a {
   color: var(--white);
 }
 
@@ -1110,7 +1111,6 @@ footer .copyrights p {
   margin: auto;
 }
 
-
 .membershipBody .ninja-text-section img.element-5,
 .wallClimbingBody .ninja-text-section img.element-5 {
   position: absolute;
@@ -1125,8 +1125,6 @@ footer .copyrights p {
   bottom: 40%;
   margin: auto;
 }
-
-
 
 .count-listing p {
   margin: 0 0 20px;
@@ -1181,7 +1179,6 @@ footer .copyrights p {
   position: relative;
 }
 
-
 .showcase-ninja-section .element-4 {
   position: absolute;
   left: 30px;
@@ -1216,7 +1213,8 @@ footer .copyrights p {
   position: absolute;
   bottom: -5px;
   left: 0;
-  background: url(../images/parties/bg-header-parties.png) no-repeat top center/cover;
+  background: url(../images/parties/bg-header-parties.png) no-repeat top
+    center/cover;
   width: 100%;
   height: 80px;
 }
@@ -1239,7 +1237,8 @@ footer .copyrights p {
   position: absolute;
   top: 0;
   left: 0;
-  background: url(../images/parties/bg-text-parties-before.png) no-repeat top center/cover;
+  background: url(../images/parties/bg-text-parties-before.png) no-repeat top
+    center/cover;
   width: 100%;
   height: 80px;
 }
@@ -1249,7 +1248,8 @@ footer .copyrights p {
   position: absolute;
   bottom: -6px;
   left: 0;
-  background: url(../images/parties/bg-text-parties-after.png) no-repeat top center/cover;
+  background: url(../images/parties/bg-text-parties-after.png) no-repeat top
+    center/cover;
   width: 100%;
   height: 80px;
 }
@@ -1623,15 +1623,15 @@ input.enter-code[type] {
   display: block;
 }
 
-.cartButtonContainer>div:nth-of-type(1) .cartTabButtons::after {
+.cartButtonContainer > div:nth-of-type(1) .cartTabButtons::after {
   background-color: #f0c24b;
 }
 
-.cartButtonContainer>div:nth-of-type(2) .cartTabButtons::after {
+.cartButtonContainer > div:nth-of-type(2) .cartTabButtons::after {
   background-color: #b5d56a;
 }
 
-.cartButtonContainer>div:nth-of-type(3) .cartTabButtons::after {
+.cartButtonContainer > div:nth-of-type(3) .cartTabButtons::after {
   background-color: #ea7066;
 }
 
@@ -1827,8 +1827,7 @@ button:has(.cartTabButtons) {
   text-align: right;
 }
 
-
-.homeBanner div:has(>.img__wrap) {
+.homeBanner div:has(> .img__wrap) {
   padding: 0;
 }
 
@@ -1849,7 +1848,7 @@ button:has(.cartTabButtons) {
   align-items: flex-start;
   justify-content: center;
   padding-top: 55px;
-  scale: .95;
+  scale: 0.95;
 }
 
 .bannerInfo .text__wrap p {
@@ -2137,7 +2136,6 @@ body {
   color: var(--tertiary-color);
 }
 
-
 .btn-bor,
 .expiCards a {
   padding: 15px 35px;
@@ -2275,7 +2273,8 @@ button.slick-arrow {
   position: absolute;
   top: -2px;
   left: 0;
-  background: url(../images/tickets/header-before.png) no-repeat top center/cover;
+  background: url(../images/tickets/header-before.png) no-repeat top
+    center/cover;
   width: 100%;
   height: 88px;
 }
@@ -2363,7 +2362,6 @@ button.slick-arrow {
   --inline-spacing: 5%;
 }
 
-
 .homeAboutSection img.prop.prop-bottom-right.prop-screen-end {
   --bottom-spacing: 6%;
   --inline-spacing: 4%;
@@ -2382,7 +2380,6 @@ button.slick-arrow {
   --inline-spacing: 9%;
 }
 
-
 /* JUMP TICKETS START */
 .rectangleBanner {
   min-height: 551px;
@@ -2393,15 +2390,15 @@ button.slick-arrow {
   background: url(../images/bg/rectangle-bg.png) center/cover no-repeat;
 }
 
-body:has(.rectangleBanner) .site-navigation>ul>li>a {
-  color: #FFF;
+body:has(.rectangleBanner) .site-navigation > ul > li > a {
+  color: #fff;
 }
 
-body:has(.rectangleBanner) header.sticky-header .site-navigation>ul>li>a {
+body:has(.rectangleBanner) header.sticky-header .site-navigation > ul > li > a {
   color: var(--primary-color);
 }
 
-body:has(.rectangleBanner) .site-navigation>ul>li>a.c-btn {
+body:has(.rectangleBanner) .site-navigation > ul > li > a.c-btn {
   background: #46c9f3;
 }
 
@@ -2412,7 +2409,7 @@ body:has(.rectangleBanner) .site-navigation>ul>li>a.c-btn {
 }
 
 .rectangleBannerText h1 {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: var(--ff-Baloo);
   font-size: 70px;
@@ -2426,7 +2423,7 @@ body:has(.rectangleBanner) .site-navigation>ul>li>a.c-btn {
 .path a {
   padding-inline: 23px;
   margin-bottom: 0;
-  color: #FFF;
+  color: #fff;
   font-family: var(--ff-Baloo);
   font-size: 21px;
   font-weight: 300;
@@ -2443,7 +2440,7 @@ body:has(.rectangleBanner) .site-navigation>ul>li>a.c-btn {
   height: 20px;
   width: 1px;
   right: 1px;
-  background-color: #FFF;
+  background-color: #fff;
   display: block;
   position: absolute;
   top: 9px;
@@ -2455,7 +2452,7 @@ body:has(.rectangleBanner) .site-navigation>ul>li>a.c-btn {
   align-items: center;
   justify-content: center;
   /* background: url(../images/bg/jump-bg.png); */
-  background: #FDF5F2;
+  background: #fdf5f2;
 }
 
 div:has(.positioned__img) {
@@ -2465,7 +2462,6 @@ div:has(.positioned__img) {
 section:has(.positioned__img) {
   position: relative;
 }
-
 
 .positioned__img {
   position: absolute;
@@ -2516,7 +2512,6 @@ section.wallClimbingSection.spacing__x-150 {
 
 /* WALL CLIMBING END */
 
-
 /* PROMOTION START */
 .promotionCards {
   max-width: 1000px;
@@ -2526,7 +2521,7 @@ section.wallClimbingSection.spacing__x-150 {
 }
 
 .promotionCards h4 {
-  color: #FFF;
+  color: #fff;
   font-family: var(--ff-fredoka);
   font-size: 80px;
   font-style: normal;
@@ -2538,7 +2533,7 @@ section.wallClimbingSection.spacing__x-150 {
 }
 
 .promotionCards p {
-  color: #FFF;
+  color: #fff;
   font-size: 22px;
   max-width: 880.695px;
   width: 100%;
@@ -2547,7 +2542,6 @@ section.wallClimbingSection.spacing__x-150 {
   line-height: 35px;
   text-transform: capitalize;
 }
-
 
 .promotionMain {
   padding: 172px 0;
@@ -2567,16 +2561,14 @@ section.wallClimbingSection.spacing__x-150 {
 
 /* MEMBERSHIP END */
 
-
 /* WAVIER PAGE START */
 .wavierBanner {
-  background: #4559B3;
+  background: #4559b3;
   border-radius: 220px 20px;
-
 }
 
 .wavierBanner p {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -2599,13 +2591,13 @@ section.wallClimbingSection.spacing__x-150 {
 .gallerySwitchButtons button {
   background: transparent;
   border-radius: 4px;
-  border: 1px solid #E5E5E5;
+  border: 1px solid #e5e5e5;
   box-shadow: 0px 1px 4px 0px rgba(255, 255, 255, 0.25);
   color: #000000 !important;
 }
 
 .gallerySwitchButtons button.active {
-  color: #FFF !important;
+  color: #fff !important;
   background: var(--secondary-color);
 }
 
@@ -2626,6 +2618,7 @@ section.wallClimbingSection.spacing__x-150 {
 .col-5-grid .grid__column:nth-of-type(even) .img__wrap {
   margin-bottom: 20px;
 }
+
 .col-5-grid .grid__column .img__wrap {
   margin-bottom: 18px;
 }
@@ -2634,26 +2627,120 @@ section.wallClimbingSection.spacing__x-150 {
   --top-spacing: 7%;
   --inline-spacing: 10%;
 }
+
 .gallerySection__5 .prop-top-right {
   --top-spacing: 15%;
   --inline-spacing: 9%;
 }
 
-
 /* WAVIER PAGE END */
 
+/* FORM PAGE START */
 
+.leadForm {
+  background: var(--primary-color);
+  padding: 40px 0 70px;
+  border-radius: 20px;
+}
+
+.leadForm form {
+  max-width: 80%;
+  margin-inline: auto;
+}
+
+.input__wrap {
+  padding: 30px 0;
+  border-block: 0.5px solid #d4d4d4;
+}
+
+.form--label-wrap {
+  /* max-width: 40%; */
+  width: 100%;
+}
+
+.leadForm .input__wrap input,
+.leadForm .input__wrap select {
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 1px solid #e7e7e7;
+}
+
+.leadForm .input__wrap input[type="checkbox"],
+.leadForm .input__wrap input[type="file"] {
+  border: none;
+  padding: 0;
+  color: #fff;
+}
+
+.leadForm .input__wrap input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+}
+
+.leadForm .selectValue,
+.leadForm label {
+  color: #fff;
+  font-family: var(--ff-Baloo);
+  font-size: 23px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.leadForm label,
+.leadForm p {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.leadForm p {
+  color: var(--tertiary-color);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.leadForm .row .input__wrap {
+  border: none;
+}
+
+.leadForm .input__wrap:has(input:checked) ~ .hidden {
+  display: block;
+}
+
+.leadForm .hidden {
+  display: none;
+}
+
+.leadForm .input__wrap div:not(.form--label-wrap) {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.selectValue {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  font-size: 16px !important;
+}
+
+/* FORM PAGE END */
+
+.activitySection img.prop.prop-top-left {
+  --top-spacing: 30%;
+}
 
 @media only screen and (max-width: 1660px) {
-
   .prop,
   .prop.prop-screen-end {
     --inline-spacing: 1%;
-    scale: .8;
+    scale: 0.8;
   }
 
   .jumpTicketSection {
-    background: #FDF5F2;
+    background: #fdf5f2;
   }
 
   .jumpTicketSection {
@@ -2670,7 +2757,6 @@ section.wallClimbingSection.spacing__x-150 {
 }
 
 @media only screen and (max-width: 1660px) {
-
   html,
   body {
     overflow-x: hidden;
@@ -2680,17 +2766,16 @@ section.wallClimbingSection.spacing__x-150 {
   .prop.prop-screen-end {
     --top-spacing: 3%;
     --bottom-spacing: 1%;
-    scale: .6;
+    scale: 0.6;
   }
 
   .projectCard {
     background-position: center;
     background-size: cover;
-
   }
 
   .positioned__img {
-    opacity: .6;
+    opacity: 0.6;
     z-index: -1;
   }
 
@@ -2699,13 +2784,42 @@ section.wallClimbingSection.spacing__x-150 {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 20px;
   }
+
+  .projectSeaction img.prop.prop-top-right {
+    --top-spacing: none;
+  }
+
+  .experienceSection img.prop.prop-top-right {
+    --inline-spacing: 5%;
+  }
+
+  .activitySection img.prop.prop-bottom-right {
+    --inline-spacing: 5%;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .activitySection img.prop.prop-bottom-right,
+  .activitySection img.prop.prop-top-left {
+    --inline-spacing: -40px;
+  }
+
+  .homeBanner .prop-top-left,
+  .homeBanner .prop-top-right {
+    --top-spacing: 12%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .experienceSection .prop {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 992px) {
-
   .prop,
   .prop.prop-screen-end {
-    scale: .6;
+    scale: 0.6;
     --bottom-spacing: 3%;
   }
 
@@ -2735,12 +2849,37 @@ section.wallClimbingSection.spacing__x-150 {
   .expiCards {
     padding: 20px 30px;
   }
+
+  .activitySection img.prop.prop-bottom-right,
+  .activitySection img.prop.prop-top-left {
+    --inline-spacing: 1%;
+  }
+
+  .activitySection img.prop.prop-top-left {
+    --top-spacing: 10%;
+  }
+
+  .bannerInfo {
+    left: 20%;
+  }
+
+  .homeBanner .img__wrap {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 767px) {
   .gallerySwitchButtons {
     flex-direction: column;
     gap: 10px;
+  }
+
+  .spacing__x-150 {
+    padding: 70px 0;
+  }
+
+  .leadForm form {
+    max-width: 90%;
   }
 
   .gallerySwitchButtons button {
@@ -2778,4 +2917,24 @@ section.wallClimbingSection.spacing__x-150 {
     display: none;
   }
 
+  .formButton {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+  }
+
+  .formButton .row h6 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .formButton .row h6 + a {
+    width: 90%;
+    text-align: center;
+  }
+
+  .formButton .row {
+    justify-content: center !important;
+  }
 }
