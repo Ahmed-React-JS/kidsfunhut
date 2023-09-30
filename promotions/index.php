@@ -1,5 +1,5 @@
-<?php include("../includes/var.php") ?>
 <!DOCTYPE html>
+<?php include("../includes/var.php") ?>
 <html lang="en">
 
 <head>

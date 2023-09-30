@@ -506,6 +506,7 @@ ul li {
 .waveRotate.bottom::after {
   transform: scaleX(-1);
 }
+
 .topRotate::before,
 .waveRotate.top::before {
   transform: scaleX(-1);
@@ -753,8 +754,20 @@ ul li {
   font-size: 40px;
 }
 
+.fs-50 {
+  font-size: 50px;
+}
+
 .fs-60 {
   font-size: 60px;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
 }
 
 .fw-500 {
@@ -964,6 +977,117 @@ header.header-white.sticky-header .site-navigation > ul > li:hover > a,
 header.header-white.sticky-header .site-navigation > ul > li.is-active > a {
   color: var(--white);
 }
+
+/* MOBILE MENU START */
+
+.burgerButton {
+  display: none;
+  width: 40px;
+}
+
+header .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burgerButton div {
+  margin-bottom: 7px;
+  background: rgb(0 0 0 / 50%);
+  border-radius: 1px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+}
+
+header.sticky-header .burgerButton div {
+  background: var(--primary-color);
+}
+
+.mobileMenu {
+  display: none;
+  --mobile-menu-bg: var(--color-1);
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  padding: 30px;
+  width: 50%;
+  background: var(--mobile-menu-bg);
+
+  transform: translateX(-100%);
+  transition: transform 400ms ease;
+  z-index: 20;
+}
+
+.mobileMenu.active {
+  transform: translateX(0);
+}
+
+.mobileMenuHeader {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+}
+
+.mobileMenuClose i {
+  color: var(--fc-accent);
+  font-size: 2rem;
+}
+
+.mobile__list li a {
+  color: var(--theme-color);
+}
+
+.mobile__list li {
+  padding: 10px 0 15px;
+  list-style: none;
+  position: relative;
+}
+
+.mobileMenu li span {
+  position: absolute;
+  right: 20px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.mobileMenu i {
+  font-size: 28px;
+}
+
+.li--has-submenu.active .closed,
+.li--has-submenu .open {
+  display: none;
+}
+
+.li--has-submenu.active .open {
+  display: block;
+}
+
+.mobile__list li:not(:nth-last-of-type(1)) {
+  border-bottom: 1px solid #ddd;
+}
+
+@media screen and (max-width: 992px) {
+  .mobile-navigation {
+    display: none;
+  }
+
+  .burgerButton,
+  .mobileMenu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .mobileMenu {
+    width: 100%;
+  }
+}
+
+/* MOBILE MENU END */
 
 .wavier-signin-info {
   text-align: center;
@@ -2026,7 +2150,7 @@ button:has(.cartTabButtons) {
   background: var(--secondary-color);
 }
 
-projectCardHover .item:has(.projectCard) {
+.projectCardHover .item:has(.projectCard) {
   max-width: 410px;
   width: 100% !important;
 }
@@ -2042,26 +2166,23 @@ projectCardHover .item:has(.projectCard) {
   position: relative;
 }
 
-.experienceSection .img__wrap::after {
-  content: "20 Years of Experience";
+.experienceSection .years-of-experience {
   position: absolute;
-  width: 301.75px;
-  height: 281.078px;
+  /* width: 301px; */
+  /* height: 281px; */
   border-radius: 20px;
   background: #ffc95d;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  text-align: center;
-  font-family: var(--ff-Baloo);
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 121.5%;
   right: -20px;
   top: -100px;
-  /* 48.6px */
+  padding: 100px 50px;
+}
+
+.experienceSection .years-of-experience h4 {
+  color: #fff;
+  font-size: 40px;
 }
 
 .experienceText p {
@@ -2238,25 +2359,23 @@ button.slick-arrow {
 
 .activityCards h6 {
   color: #323663;
-  font-family: var(--ff-Baloo);
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 101%;
-  margin-bottom: 0;
-  /* 20.2px */
+  line-height: 1.5;
+  margin-bottom: 5px;
   text-transform: capitalize;
 }
 
 .activityCards p {
   color: #757575;
-  font-family: Baloo 2;
+  font-family: var(--ff-Baloo);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
-  /* 214.286% */
+  line-height: 1.5;
   text-transform: capitalize;
+  margin: 0;
 }
 
 /* ACTIVITY SECTION END */
@@ -2414,7 +2533,7 @@ body:has(.rectangleBanner) .site-navigation > ul > li > a.c-btn {
   font-family: var(--ff-Baloo);
   font-size: 70px;
   font-style: normal;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: 70px;
   /* 100% */
   text-transform: capitalize;
@@ -2732,6 +2851,265 @@ section.wallClimbingSection.spacing__x-150 {
   --top-spacing: 30%;
 }
 
+/* ==== GROUP PAGE START ====*/
+
+.groupSectionMain {
+  background: #fdf5f2;
+  padding: 180px 0;
+}
+
+.groupSection .section__heading {
+  color: #323663;
+  font-family: var(--ff-Baloo);
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 65px;
+  text-transform: capitalize;
+  margin-bottom: 66px;
+}
+
+.groupSection .price {
+  min-height: 320px;
+}
+
+.groupSection .package-box {
+  border-radius: var(--bd-radius) var(--bd-radius) 104px 104px;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+  max-width: 580px;
+  width: 100%;
+  margin-inline: auto;
+
+  --bd-radius: 50px;
+}
+
+.groupSection .price::after {
+  border-radius: var(--bd-radius) var(--bd-radius) 0 0;
+}
+
+.groupSection .price::before {
+  border-top-right-radius: var(--bd-radius);
+
+  height: 105%;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+.groupSection .groupPriceContent {
+  padding: 0 55px;
+  padding-bottom: 80px;
+
+  text-align: center;
+}
+
+.groupPriceContent * {
+  font-family: var(--ff-Baloo);
+}
+
+.group--list-title {
+  color: #ff7a00 !important;
+  font-family: var(--ff-Baloo);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-bottom: 22px;
+}
+
+.group--footer-note,
+.groupPriceContent ul li {
+  color: #757575;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 101%;
+  /* 30.3px */
+  text-transform: capitalize;
+  margin-bottom: 26px;
+}
+
+.groupPriceContent ul li {
+  position: relative;
+  width: max-content;
+  margin-inline: auto;
+}
+
+.groupPriceContent ul li::before {
+  content: "";
+  left: -24px;
+  top: 2px;
+  width: 15.208px;
+  height: 15.208px;
+  border-radius: 100%;
+  background: linear-gradient(90deg, #ff7a00 0%, #ffc700 86.14%);
+  display: block;
+  position: absolute;
+}
+
+.group--blue-title {
+  color: #46c9f3;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 101%;
+  /* 30.3px */
+  text-transform: capitalize;
+  margin-bottom: 22px;
+}
+
+.group--footer-heading {
+  color: var(--color-1);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 101%;
+  text-transform: capitalize;
+  margin-bottom: 21px;
+}
+
+.group--footer-note {
+  line-height: 23px !important;
+  margin-bottom: 30px !important;
+}
+
+.group--footer-category {
+  color: #ffc95d;
+  font-family: var(--ff-Baloo);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 101%;
+  text-transform: capitalize;
+}
+
+.groupSection .prop-top-left.star {
+  --top-spacing: 18%;
+  --inline-spacing: 1%;
+}
+
+.groupSection .prop-top-left {
+  --top-spacing: 10%;
+}
+
+.groupSection .prop-top-right {
+  --top-spacing: 9%;
+}
+
+.groupSection .prop-top-right.star {
+  --top-spacing: 8%;
+  --inline-spacing: 28%;
+}
+
+/* ==== GROUP PAGE END =====*/
+
+/* ==== ABOUT PAGE START =====*/
+.aboutBanner .rectangleBannerText {
+  max-width: 100%;
+}
+
+.aboutBanner .rectangleBannerText h1 {
+  font-weight: 600;
+}
+
+.aboutBanner .rectangleBannerText p {
+  color: #fc6c93;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.aboutMainCards {
+  padding: 80px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  min-height: 458.963px;
+  margin-inline: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+}
+
+.aboutMainCardsText {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aboutMainCards h4 {
+  color: #fff;
+  font-family: Fredoka One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 55px;
+  /* 114.286% */
+  text-transform: capitalize;
+}
+
+.aboutMainCardsText p {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.aboutMainCards span {
+  color: var(--tertiary-color);
+}
+
+.btn-bor:hover {
+  color: #000;
+}
+
+.btn-bor {
+  position: relative;
+}
+
+.btn-bor::after {
+  content: "Learn More";
+  color: #000;
+
+  border-radius: inherit;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  transform: scale(0);
+  transition: transform 250ms ease;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-bor:hover {
+  color: #000;
+}
+
+.btn-bor:hover::after {
+  transform: scale(1);
+}
+
+.aboutMainSection .prop-top-left,
+.aboutMainSection .prop-top-right {
+  --top-spacing: 2.5%;
+}
+.aboutMainSection .prop-bottom-left,
+.aboutMainSection .prop-bottom-right {
+  --bottom-spacing: 4%;
+}
+
+.aboutMainSection .prop-bottom-left {
+  rotate: 20deg;
+}
+
+/* ==== ABOUT PAGE END =====*/
+
 @media only screen and (max-width: 1660px) {
   .prop,
   .prop.prop-screen-end {
@@ -2798,6 +3176,22 @@ section.wallClimbingSection.spacing__x-150 {
   }
 }
 
+@media only screen and (max-width: 1500px) {
+  .aboutMainSection .prop-bottom-left,
+  .aboutMainSection .prop-bottom-right {
+    --inline-spacing: 0;
+  }
+
+  .aboutMainSection .prop-bottom-right {
+    scale: 0.5;
+    --inline-spacing: -59px;
+  }
+
+  .aboutMainSection .prop {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1360px) {
   .activitySection img.prop.prop-bottom-right,
   .activitySection img.prop.prop-top-left {
@@ -2825,10 +3219,6 @@ section.wallClimbingSection.spacing__x-150 {
 
   .experienceSection img.prop.prop-top-left {
     display: none;
-  }
-
-  .row {
-    gap: 20px;
   }
 
   .galleryGrid {
@@ -2866,6 +3256,10 @@ section.wallClimbingSection.spacing__x-150 {
   .homeBanner .img__wrap {
     text-align: center;
   }
+
+  .groupSection .prop {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -2874,8 +3268,20 @@ section.wallClimbingSection.spacing__x-150 {
     gap: 10px;
   }
 
+  .aboutMainCards {
+    padding-inline: 20px;
+  }
+
   .spacing__x-150 {
     padding: 70px 0;
+  }
+
+  .spacing__x {
+    padding: 50px 0;
+  }
+
+  .f-header {
+    padding-top: 200px;
   }
 
   .leadForm form {
@@ -2887,7 +3293,7 @@ section.wallClimbingSection.spacing__x-150 {
   }
 
   .fs-60 {
-    font-size: 50px;
+    font-size: 60px;
   }
 
   .col-5-grid {
@@ -2936,5 +3342,106 @@ section.wallClimbingSection.spacing__x-150 {
 
   .formButton .row {
     justify-content: center !important;
+  }
+
+  .groupSection .section__heading {
+    font-size: 50px !important;
+    margin-bottom: 20px;
+  }
+  .rectangleBanner {
+    min-height: 300px;
+  }
+  .rectangleBannerText h1 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .path a {
+    padding-inline: 15px;
+    font-size: 16px;
+  }
+  .logo a {
+    max-width: 60px;
+  }
+  br {
+    display: none;
+  }
+  .section__heading {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .activitySection {
+    padding: 0;
+  }
+  .activeMain {
+    padding: 40px;
+  }
+  .activityCards {
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .activityCards h6 {
+    font-size: 18px;
+  }
+  .galleryGrid .img__wrap {
+    grid-column: 1;
+  }
+  .galleryGrid {
+    gap: 15px;
+  }
+  .parties-banner img {
+    display: none;
+  }
+  .parties-banner {
+    padding: 120px 0;
+  }
+  .fs-25,
+  .fs-60,
+  .fs-50,
+  .fs-40,
+  .fs-30,
+  .bannerText h1,
+  .expiCards h4 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  footer .ft-nav h3 {
+    font-size: 18px;
+  }
+  .homeBanner {
+    padding-top: 130px;
+  }
+  .bannerText {
+    margin: 0 0 20px;
+  }
+  .section__text {
+    padding-top: 0;
+  }
+  .experienceText li {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .experienceText {
+    margin-bottom: 30px;
+  }
+  .experienceSection .img__wrap::after {
+    display: none;
+  }
+  .activityMainContainer {
+    padding-top: 110px;
+  }
+  .experienceSection .years-of-experience {
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 25px 0 20px;
+    margin: 30px 0 0;
+  }
+  .experienceSection .years-of-experience h4 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .breadcrumbs > li a {
+    font-size: 16px;
   }
 }
