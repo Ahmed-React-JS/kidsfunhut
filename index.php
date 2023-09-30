@@ -80,9 +80,12 @@
                             <div class="homeAboutText">
                                 <h6 class="section__label fw-700">WHAT WE DO</h6>
                                 <h4 class="section__heading">Lorem Ipsum is simply dummy text of the printing</h4>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                    has been the industry's standard dummy text ever since the 1500sLorem Ipsum is simply
-                                    dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the industry's standard dummy text ever since the 1500sLorem Ipsum is
+                                    simply
+                                    dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                    industry's
                                     standard dummy text ever since the 1500s,,</p>
                                 <div class="aboutStats">
                                     <div class="d-flex justify-content-between">
@@ -133,7 +136,8 @@
                     <div class="item">
                         <div class="projectCard" style="background-image: url(assets/images/home/projectCard-1.png);">
                             <div class="projectCardHover">
-                                <div class="img__wrap"><a href=""><img src="assets/images/home/star-search.png" alt=""></a></div>
+                                <div class="img__wrap"><a href=""><img src="assets/images/home/star-search.png"
+                                            alt=""></a></div>
                                 <div class="text__wrap">
                                     <h5>Lorem Ipsum is</h5>
                                     <h6>Lorem Ipsum</h6>
@@ -144,7 +148,8 @@
                     <div class="item">
                         <div class="projectCard" style="background-image: url(assets/images/home/projectCard-2.png);">
                             <div class="projectCardHover">
-                                <div class="img__wrap"><a href=""><img src="assets/images/home/star-search.png" alt=""></a></div>
+                                <div class="img__wrap"><a href=""><img src="assets/images/home/star-search.png"
+                                            alt=""></a></div>
                                 <div class="text__wrap">
                                     <h5>Lorem Ipsum is</h5>
                                     <h6>Lorem Ipsum</h6>
@@ -155,7 +160,8 @@
                     <div class="item">
                         <div class="projectCard" style="background-image: url(assets/images/home/projectCard-3.png);">
                             <div class="projectCardHover">
-                                <div class="img__wrap"><a href=""><img src="assets/images/home/star-search.png" alt=""></a></div>
+                                <div class="img__wrap"><a href=""><img src="assets/images/home/star-search.png"
+                                            alt=""></a></div>
                                 <div class="text__wrap">
                                     <h5>Lorem Ipsum is</h5>
                                     <h6>Lorem Ipsum</h6>
@@ -166,7 +172,8 @@
                     <div class="item">
                         <div class="projectCard" style="background-image: url(assets/images/home/projectCard-3.png);">
                             <div class="projectCardHover">
-                                <div class="img__wrap"><a href=""><img src="assets/images/home/star-search.png" alt=""></a></div>
+                                <div class="img__wrap"><a href=""><img src="assets/images/home/star-search.png"
+                                            alt=""></a></div>
                                 <div class="text__wrap">
                                     <h5>Lorem Ipsum is</h5>
                                     <h6>Lorem Ipsum</h6>
@@ -207,8 +214,12 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-12">
-                    <div class="img__wrap">
+                    <div class="img__wrap position-relative">
                         <img src="assets/images/home/expi-1.png" alt="">
+                        <div class="years-of-experience">
+                            <h4>20 Years of <br />
+                                Experience</h4>
+                        </div>
                     </div>
                 </div>
             </div>
