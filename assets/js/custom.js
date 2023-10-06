@@ -297,7 +297,7 @@ let mobileSubmenu = '.mobile--submenu'
 $(mobileSubmenu).slideUp();
  
 mobileSubmenuButton.click(function(e) {
-    e.preventDefault();
+    // e.preventDefault();
 
     $(this).toggleClass('active')
     $(this).find(mobileSubmenu).slideToggle();

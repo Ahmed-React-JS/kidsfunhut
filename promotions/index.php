@@ -27,7 +27,7 @@
         <div class="container text-center position-relative">
             <h1 class="fs-60 heading-color-1">Fun kids London Promotions & Specials
             </h1>
-            <p class="fs-17">*Discounts may vary from location to location. Please select your nearest location to get exact discount list.
+            <p class="fs-17" style="color: #757575;">*Discounts may vary from location to location. Please select your nearest location to get exact discount list.
             </p>
         </div>
     </section>
