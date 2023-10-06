@@ -26,7 +26,7 @@
             <div class="rectangleBannerText">
                 <h1>JUMP TICKETS</h1>
                 <div class="path d-flex align-items-center justify-content-center">
-                    <a href=""><img src="assets/images/home-icon.png" alt="">Home</a>
+                    <a href=""><i class="fas fa-home mr-2"></i>Home</a>
                     <a href="">Jump Tickets</a>
                 </div>
             </div>

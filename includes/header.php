@@ -1,6 +1,5 @@
 <header>
     <div class="container">
-
         <div class="row align-items-center">
             <div class="col-lg-3">
                 <div class="logo">
@@ -33,7 +32,7 @@
                         <li><a href="waiver/">Waiver</a></li>
                         <li><a href="promotions">Promotions</a></li>
                         <li><a href="javacript:;">Terms</a></li>
-                        <li><a href="javacript:;" class="c-btn style-1">Contact Us</a></li>
+                        <li><a href="contact-us/" class="c-btn style-1">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -74,6 +73,6 @@
         <li><a href="waiver/">Waiver</a></li>
         <li><a href="promotions">Promotions</a></li>
         <li><a href="javacript:;">Terms</a></li>
-        <li><a href="javacript:;" class="c-btn style-1">Contact Us</a></li>
+        <li><a href="contact-us/" class="c-btn style-1">Contact Us</a></li>
     </ul>
 </div>
